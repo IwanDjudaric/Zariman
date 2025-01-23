@@ -1,2 +1,0 @@
-# Zariman
-Zariman Ten Zero
