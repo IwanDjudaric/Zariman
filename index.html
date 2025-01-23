@@ -1,70 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chrysalith</title>
-    <link rel="stylesheet" href="/css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
     <div>
-        <header><h1>Welcome to the Chrysalith</h1></header><br>
-        <main>
-            <p>The Chrysalith, a safe hub in the Zariman Ten Zero away from most danger. Log in to the system to enter</p><br>
-            <form>
-                <label for="nameform">Name: </label><br>
-                <input type="text" name="nameform" id="nameform" required placeholder="Tenno"><br><br>
+      <header>
+        <h1>Welcome to the Chrysalith</h1>
+    
+        <ul id="mainnav">
+            <li>test</li>
+            <li>
+              test
+              <ul id="mininav">
+                <li>test</li>
+                <li>test</li>
+              </ul>
+            </li>
+            <li>test</li>
+          </ul>
 
-                <label for="ageform">Age: </label><br>
-                <input type="number" name="ageform" id="ageform" required placeholder="10K+"><br><br>
+    </header>
+      <br/>
 
-                <label for="emailform">Email: </label><br>
-                <input type="email" name="emailform" id="emailform" required placeholder="voidchild@zariman.com"><br><br>
-                
-                <label for="passwordform">Password: </label><br>
-                <input type="password" name="passwordform" id="passwordform" required"><br><br>
+      <img src="/images/logo/141-1418143_evfxjmc-warframe-symbol.png" id="wflogo"">
+      <main>
+        <p>
+          The Chrysalith, a safe hub in the Zariman Ten Zero away from most
+          danger. Log in to the system to enter
+        </p>
+        <br />
+        <form>
+          <label for="nameform">Name: </label><br />
+          <input
+            type="text"
+            name="nameform"
+            id="nameform"
+            required
+            placeholder="Tenno"
+          /><br /><br />
 
-                <p>Primary weapon</p>
+          <label for="ageform">Age: </label><br />
+          <input
+            type="number"
+            name="ageform"
+            id="ageform"
+            required
+            placeholder="10K+"
+          /><br /><br />
 
-                <input type="radio" name="Arsenal" id="primary1" required><br>
-                <label for="primary1">Phenmor</label><br><br>
-                
-                <input type="radio" name="Arsenal" id="primary2" required><br>
-                <label for="primary2">Felarx</label><br><br>
+          <label for="emailform">Email: </label><br />
+          <input
+            type="email"
+            name="emailform"
+            id="emailform"
+            required
+            placeholder="voidchild@zariman.com"
+          /><br /><br />
 
-                <input type="submit">
-            </form>
-            <div class="parent">
-                <div class="div1">
-                    <h1>The greenway</h1>
-                    <h1>Tuvul Commons</h1>
-                    <h1>Halako Perimeter</h1>
-                    <h1>Everview Arc</h1>
-                    <h1>Oro Works</h1>
-                </div>
-                </div>
-                <div>
-                    <ul>
-                        <li>
-                            <p>JJ</p>
-                        </li>
-                        <li>
-                            JJ
-                        </li>
-                        <li>
-                            <ul>
-                                <li>
-                                    <p>jj</p>
-                                </li>
-                                <li>
-                                    <p>jj</p>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-        </main>
+          <label for="passwordform">Password: </label><br />
+          <input type="password" name="passwordform" id="passwordform"
+          required"><br /><br />
+
+          <p>Primary weapon</p>
+
+          <input type="radio" name="Arsenal" id="primary1" required /><br />
+          <label for="primary1">Phenmor</label><br /><br />
+
+          <input type="radio" name="Arsenal" id="primary2" required /><br />
+          <label for="primary2">Felarx</label><br /><br />
+
+          <input type="submit" />
+        </form><br>
+
+        <div class="parent">
+          <div class="div1">
+            <a href="https://warframe.fandom.com/wiki/The_Greenway"><h1>The greenway</h1></a>
+            <a href="https://warframe.fandom.com/wiki/Tuvul_Commons"><h1>Tuvul Commons</h1></a>
+            <a href="https://warframe.fandom.com/wiki/Halako_Perimeter"><h1>Halako Perimeter</h1></a>
+            <a href="https://warframe.fandom.com/wiki/Everview_Arc"><h1>Everview Arc</h1></a>
+            <a href="https://warframe.fandom.com/wiki/Oro_Works"><h1>Oro Works</h1></a>
+          </div>
+        </div>
+      </main>
     </div>
-</body>
-<script src="/js/script.js"></script>
+  </body>
+  <script src="/js/script.js"></script>
 </html>

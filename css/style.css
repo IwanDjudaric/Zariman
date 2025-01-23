@@ -1,18 +1,83 @@
-.parent {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    background-color: red;
-    }
-    
-    .div1 { grid-area: 1 / 1 / 6 / 2; }
+body {
+  background-image: url(/images/backgroundimage/dir3a7m-e555415a-75ce-48c1-bf81-8589b4e84c61.png);
+  background-size: cover;
+  font-family: arial, sans-serif;
+  color: white;
+}
 
-    #incarnons :hover{
-        display: block;
-    }
-.dropdown{
-    display: inline-block;
-    
+.parent {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 60%;
+  border-radius: 20px;
+}
+
+.div1 {
+  grid-area: 1 / 1 / 6 / 2;
+}
+
+/* Basic styles for the menu */
+#mainnav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#mainnav > li {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+#mainnav li ul {
+  display: none; /* Hide the sub-menu by default */
+  position: absolute;
+  top: 100%; /* Position the sub-menu just below the parent */
+  left: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  min-width: 150px;
+  z-index: 1;
+}
+
+#mainnav li:hover > ul {
+  display: block; /* Show the sub-menu when the parent is hovered */
+}
+
+#mainnav li ul li {
+    background-color: rgba(0, 0, 0, 0.5);
+  padding: 8px;
+}
+
+#mainnav li ul li:hover {
+  background-color: rgba(0, 0, 0, 0.9); /* Highlight item on hover */
+}
+input {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+#wflogo{
+    float: right;
+    width: 300px;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    position: relative;
+    top: -50px;
+    right: 30px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+header{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: sticky;
 }
